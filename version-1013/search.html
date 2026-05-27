@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/site.js"></script>
+
+<script defer src="assets/catalog.js"></script>
+<title>全站搜索 - 最新欧美影片-最新影片合集-热门影片在线点播</title>
+<meta name="description" content="全站搜索页面，可检索 2000 部影片。">
+<meta name="keywords" content="搜索,全站检索,影片查询,最新欧美影片,最新影片合集,热门影片在线点播,欧美影片,最新电影,电影片库">
+<link rel="canonical" href="search.html">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="index.html" aria-label="首页">
+      <div class="brand-mark"></div>
+      <div>
+        <div class="brand-title">最新欧美影片-最新影片合集-热门影片在线点播</div>
+        <div class="brand-sub">静态片库 · 2000 部影片索引</div>
+      </div>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="展开导航">☰</button>
+    <nav class="nav-wrap" data-nav-menu><a class="nav-link " href="index.html">首页</a><a class="nav-link " href="categories.html">分类总览</a><a class="nav-link " href="ranking.html">排行榜</a><a class="nav-link active" href="search.html">搜索</a><a class="nav-link " href="genre-剧情.html">剧情</a><a class="nav-link " href="genre-喜剧.html">喜剧</a><a class="nav-link " href="genre-动作.html">动作</a><a class="nav-link " href="genre-悬疑.html">悬疑</a></nav>
+  </div>
+</header>
+<main class="container" data-search-page>
+  <section class="page-hero panel">
+    <h1>全站搜索</h1>
+    <p>输入标题、地区、题材或标签即可筛选 2000 部影片。页面结果由本地静态数据驱动，不依赖服务端。</p>
+    <div class="hero-links"><span class="chip">命中 <strong data-search-count>0</strong> 条</span></div>
+  </section>
+
+  <section class="section">
+    <div class="panel" style="padding:16px;">
+      <div class="filter-row">
+        <input data-search-input placeholder="输入关键词：标题 / 标签 / 简介 / 地区" value="">
+        <select data-search-genre>
+          <option value="">全部题材</option>
+          <option value="剧情">剧情</option><option value="喜剧">喜剧</option><option value="动作">动作</option><option value="悬疑">悬疑</option><option value="爱情">爱情</option><option value="科幻">科幻</option><option value="恐怖">恐怖</option><option value="奇幻">奇幻</option><option value="惊悚">惊悚</option><option value="动画">动画</option><option value="犯罪">犯罪</option><option value="战争">战争</option>
+        </select>
+        <select data-search-region>
+          <option value="">全部地区</option>
+          <option value="华语">华语</option>
+          <option value="欧美">欧美</option>
+          <option value="亚洲">亚洲</option>
+          <option value="其他地区">其他地区</option>
+        </select>
+      </div>
+      <div class="hero-links" style="margin-top:14px">
+        <button class="chip" type="button" data-search-chip data-value="喜剧" data-genre="喜剧">喜剧</button>
+        <button class="chip" type="button" data-search-chip data-value="悬疑" data-genre="悬疑">悬疑</button>
+        <button class="chip" type="button" data-search-chip data-value="爱情" data-genre="爱情">爱情</button>
+        <button class="chip" type="button" data-search-chip data-value="科幻" data-genre="科幻">科幻</button>
+        <button class="chip" type="button" data-search-chip data-value="欧美" data-region="欧美">欧美</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="search-results" data-search-results></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <div>
+      <div class="brand-title">最新欧美影片-最新影片合集-热门影片在线点播</div>
+      <div class="muted">最新欧美影片页面整理近期欧美影片，按题材、热度和地区方向进行分类。</div>
+    </div>
+    <div class="muted">本页播放器使用本地预览片源，便于离线访问与点击播放；如后续补充真实片源，可直接替换 assets/preview.webm。</div>
+  </div>
+</footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

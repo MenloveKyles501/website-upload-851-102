@@ -1,0 +1,1 @@
+Built from uploaded TXT data and recreated into static HTML/CSS/JS.
